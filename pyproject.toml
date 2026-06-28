@@ -1,7 +1,7 @@
 [project]
-name = "hello-sdd"
+name = "yarn-reporter"
 version = "0.1.0"
-description = "SDD Hello World project"
+description = "SDD yarn-reporter project"
 
 [build-system]
 requires = ["setuptools"]
