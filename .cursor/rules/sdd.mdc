@@ -1,0 +1,22 @@
+---
+description: SDD Rules for this project
+globs: ["*.py"]
+---
+# SDD (Specification-Driven Development) Rules
+
+## Core Principle
+Always follow Specification-Driven Development: 
+Specification → Implementation → Tests → Verification.
+
+## Workflow
+1. **Read the specification** from `specs/` directory first
+2. **Implement** the code according to the spec
+3. **Write tests** that cover all acceptance criteria from the spec
+4. **Verify**: run `ruff check . --fix` then `pytest -q`
+5. Only mark task complete when all checks pass
+
+## Code Style
+- Use type hints for all function parameters and return values
+- Write docstrings for all public functions
+- Handle edge cases as documented in the spec
+- Keep functions small and focused (single responsibility)
